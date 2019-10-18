@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>reading</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/test-style.css">
+	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+	
+	<header class="test-header clearfix">
+		<div class="layout-position">
+
+			<div class="test-header-wraper">
+				<div class="logo">
+					<a href="index.html" class="logo-link"><img src="../img/land/Logo-White.png" width="300" height="59" alt="Readium"></a>
+				</div>
+				<div class="subscription hidden">
+					<a class="subscription__link btn" href="#">Оформить подписку</a>
+					<div class="reward hidden">
+						<ul>
+							<li class="reward-item reward-item__star">100</li>
+							<li class="reward-item reward-item__energy">100</li>
+							<li class="reward-item reward-item__coin">100</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="user-block">
+					<div class="user-block__notification">
+						<i class="far fa-bell"></i>
+					</div>
+					<div class="user-block__avatar">
+						<img src="../img/test/avatar1.jpg" alt="ваш аватар">
+					</div>
+					<div class="user-block__profile">
+						<span class="user-block__profile-name">Казимир</span>
+						<span class="user-block__profile-access">Базовый доступ</span>
+					</div>
+					<div class="arr-down">
+						<i class="fas fa-angle-down"></i>
+					</div>
+
+				</div>
+				<div class="user-menu hidden">
+					<ul>
+						<li class="user-menu__item"><a href="#">Профиль</a></li>
+						<li class="user-menu__item"><a href="#">Оформить подписку</a></li>
+						<li class="user-menu__item hidden"><a href="#">Статистика</a></li>
+						<li class="user-menu__item hidden"><a href="#">Награды</a></li>
+						<li class="user-menu__item hidden"><a href="#">Упражнения</a></li>
+					</ul>
+					<div class="reward reward--small">
+						<ul>
+							<li class="reward-item reward-item--small reward-item__star reward-item__star--small">100</li>
+							<li class="reward-item reward-item--small reward-item__energy reward-item__energy--small">100</li>
+							<li class="reward-item reward-item--small reward-item__coin reward-item__coin--small">100</li>
+						</ul>
+						<div class="exit">
+							<button class="exit-profile">Выход</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	<!-- -----------------------test-content -------------------------------------------------------->
+	<main>
+		<div class="test layout-position">
+			<!-- ----------------start-scr--------------------------- -->
+			<div class="test-wraper test-wraper-start ">
+				<div class="first-screen clearfix">
+					<img src="../img/test/start-t2-boy.png" width="268" height="490" alt="IMG">
+					<p class="first-screen__text first-screen__text-top test-content__text--blue">Прочитай текст, который сейчас появится на экране.</p>
+					<p class="first-screen__text first-screen__text-bot">Постарайся сделать это быстро. Когда прочитаешь, нажми на <span class= "test-content__text--pur">пробел</span> или кнопку <span class= "test-content__text--pur">«Прочитал»</span>.</p>
+					<p class="first-screen__text first-screen__text-bot">Ответь на вопросы, которые появятся после текста.</p>
+					<button id="start-btn" class="test-read btn">Старт</button>
+				</div>
+			</div>
+			<!-- ---------------ready-scr---------------------------- -->
+			<div class="test-wraper test-wraper-ready hidden">
+				<div class="test-content test-ready">
+					<p>Вы готовы?</p>
+					<button id="btn-ready" class="test-read test-read--ready">Да</button>
+				</div>
+			</div>	
+
+				<!----------------------test-scr--------------------------->				
+				<div id="test-scr" class="test-wraper-reading clearfix hidden">
+					<div class="test-content test-reading">
+						<div class="test-timer-r">
+							<span class="test-timer-r__text">читай быстро</span>
+							<span id="timer" class="test-timer-r__namber">0 : 00</span>
+						</div>
+						<p id="test-text" class="test-reading__text shadow">
+							Мысль о скорой разлуке со мною так поразила матушку, что она уронила ложку в кастрюльку, и слезы потекли по ее лицу. Напротив того, трудно описать мое восхищение. Мысль о службе сливалась во мне с мыслями о свободе, об удовольствиях петербургской жизни. Я воображал себя офицером гвардии, что, по мнению моему, было верхом благополучия человеческого. Батюшка не любил ни переменять свои намерения, ни откладывать их исполнение. День отъезду моему был назначен. Накануне батюшка объявил, что намерен писать со мною к будущему моему начальнику, и потребовал пера и бумаги.
+						</p>
+
+
+						<div class="test-btn-block">
+							<button id="test-reading" class="test-read btn">Прочитал</button>
+							<div class="btn-overlay hidden"></div>
+						</div>
+					</div>
+				</div>	
+				<!-- --------------answer-scr------------------------------>	
+
+				<div id ="test-answer" class="test-reading-answer hidden">
+					<div class="test-reading-answer__text">
+						<p>Куда уронила ложку матушка?</p>
+					</div>
+					<div class="possible-answer possible-answer--col1"> <!-- possible-answer--col1 -->
+						<div class="possible-answer__wrap">
+							<span class="possible-answer__item possible-answer__item--blue">В кастрюлю</span>
+						</div>
+						<div class="possible-answer__wrap">
+							<span class="possible-answer__item possible-answer__item--blue">На пол</span>
+						</div>
+						<div class="possible-answer__wrap">
+							<span class="possible-answer__item possible-answer__item--blue">В тарелку</span>
+						</div>
+
+						<div class="test-btn-block">
+							<button id="btn-answ" class="test-read test-read2 hidden">Далее</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+				
+			
+			<div id="result-block" class="test-wraper test-wraper-result hidden">
+				<div class="test-content clearfix">
+					<img class="img-result" src="../img/test/boy.png" width="272" height="463" alt="IMG">
+					<div class="result-block">
+						<div class="result-block__title"> 
+							<h3>Отличная работа!</h3>
+							<p>Твоя скорость чтения:</p>	
+						</div>
+						<div id="result-text" class="result-block__text test-content__text--pur"> 100 слов в минуту </div>
+						<div class="result-block__text-bot text-left">
+							<p>Ты получаешь свою первую награду.</p>
+							<p>Переходи к занятиям, чтобы увеличить свою скорость!</p>
+						</div>
+					</div>
+					<button id="btn-result" class="test-read test-read--right test-read--result btn">далее</button>
+				</div>
+			</div>
+	</div>
+		
+	</main>
+	<script src="../js/upload.js"></script>
+	<script src="../js/reading.js"></script>
+</body>
+</html>

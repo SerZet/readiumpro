@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Readium</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- <meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	Chrome, Firefox OS and Opera
+	<meta name="theme-color" content="#000">
+	Windows Phone
+	<meta name="msapplication-navbutton-color" content="#000">
+	iOS Safari
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000"> -->
+	<style>body { overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/land-style.css">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+	
+	<header class="index-header">
+		<!-- <div class="index-header__promo clearfix">
+			
+			<div class="layout-position ">
+				<p class="index-header__promo-text">Узнай насколько ты быстро читаешь совершенно <span>бесплатно!</span>
+				</p>
+				<a class="index-header__promo-link" href="test-page.html">Узнать</a>
+			</div>
+			
+		</div> -->
+		<div class="index-header__user-block clearfix">
+			<div class="layout-position">
+				<div class="index-logo">
+					<img src="img/land/Logo-White.png" alt="Readium" width="300" height="59">
+				</div>
+				<div class="user-login">
+					<a href="#" class="user-login__link btn" id="user-login">Вход</a>
+					<a href="#" class="user-login__link btn" id="user-register">Регистрация</a>
+					<a href="https://vk.com/readium" class="user-login__social-link user-login__social-link--vk" target="_blank">
+						<i class="fab fa-vk"></i>
+						Вконтакте
+					</a>
+					<a href="https://www.instagram.com/readium_pro" class="user-login__social-link user-login__social-link--inst" target="_blank">
+						<i class="fab fa-instagram"></i>
+						Ютуб
+					</a>
+					<a href="https://www.youtube.com/channel/UCrdxviKGUjclJFq8LaoS1WQ?view_as=subscriber" class="user-login__social-link user-login__social-link--youtube" target="_blank">
+						<i class="fab fa-youtube"></i>
+						инст
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="index-header__content">
+			<div class="layout-position">
+				<div class="index-header__content-text">
+					<p class="index-header__content-text-top">Выходи на<br> космическую<br> скорость чтения!</p>
+					<p class="index-header__content-text-bot">с тренажёрами <span>readium.pro</span></p>
+					<a href="test_code/reading.html" class="index-header__content-text-link">Начать заниматься!</a>
+				</div>
+				<div class="animation">
+					
+					<img class="animation-roket" width="217" height="137" 	src="img/land/roket.png" alt="roket">
+					<div class="animation-box">
+						<img class="animation-fire" src="img/land/fire.png" alt="fire">
+					</div>
+					
+					<img class="animation-earth" src="img/land/Earth.png" width="1200" height="1200" alt="Earth">
+				</div>
+			</div>
+			<div class="index-header__content-marquee">
+				<span >читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю читаю играю</span>
+			</div>
+			
+		</div>
+	</header>
+	<main>
+		<div class="pluses-program">
+			<div class="layout-position">
+				<h2 class="pluses-program__title">Быстро читать, это значит:</h2>
+
+				<div class="pluses-program__items clearfix">
+
+					<div class="row clearfix">
+						<div class="pluses-program__item">
+							<div class="pluses-program__item-img">
+								<img src="img/land/book.svg" width="170" height="170" alt="img">
+							</div>
+							<h3 class="pluses-program__item-title">Быстрее делать уроки</h3>
+							<p class="pluses-program__item-content">Полученные у нас навыки помогут ребенку лучше ориентироваться в заданиях, которые ему задают на дом </p>
+						</div>
+						<div class="pluses-program__item">
+							<div class="pluses-program__item-img">
+								<img src="img/land/head-flesh.svg" width="170" height="170" alt="img">
+							</div>
+							<h3 class="pluses-program__item-title">Больше знать</h3>
+							<p class="pluses-program__item-content">Увеличиваешь скорость - развиваешься быстрее! Все просто :)</p>
+						</div>
+					</div>
+
+					<div class="row clearfix">
+						<div class="pluses-program__item ">
+							<div class="pluses-program__item-img">
+								<img src="img/land/book-zoom.svg" width="170" height="170" alt="img">
+								
+							</div>
+							<h3 class="pluses-program__item-title">Быстрее искать нужную информацию</h3>
+							<p class="pluses-program__item-content">Благодаря развитому скорочтению	ребенок в разы эффективней ориентируется в бесконечном потоке информации</p>
+						</div>
+						<div class="pluses-program__item">
+							<div class="pluses-program__item-img">
+								<img src="img/land/brain.svg" width="170" height="170" alt="img">
+								
+							</div>
+							<h3 class="pluses-program__item-title">Легко запоминать</h3>
+							<p class="pluses-program__item-content">Чем больше информации поглощает	мозг, тем легче воспринимаются новые знания!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pluses-program__promo">
+				<div class="pluses-program__promo-title">
+					<div class="layout-position">
+						<div class="pluses-program__promo-title-wrap">
+							<img src="img/land/promo-pluses.png" width="171" height="214" alt="img">
+							<h2>С нами учиться легко!</h2>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="layout-position">
+					<a href="test2.php" class="pluses-program__promo-link">Хочу учится легко</a>
+				</div> -->
+			</div>
+		</div>
+		
+		<div class="advantage-lessons clearfix">
+			<div class="layout-position">
+				<h2 class="advantage-lessons__title">Для кого наши занятия и чем они полезны</h2>
+				<div class="advantage-lessons__student">
+					<b class="advantage-lessons__student-title">Для школьников</b>
+					<div class="advantages">
+						<div class="advantages-item">
+							<img src="img/land/adv-st-1.svg" width="130" height="130" alt="star">
+							<p>Наши уроки улучшают обучаемость в учебных заведениях</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-st-2.svg" width="130" height="130" alt="round">
+							<p>Программа развивает скорочтение и многое другое</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-st-3.svg" width="130" height="130" alt="flash">
+							<p>Ежедневные тренировки развивают множество полезных навыков</p>
+						</div>
+						<!-- <div class="advantages-controls">
+							<i class="advantages-control advantages-control--blue advantages-control--active-blue">1</i>
+							<i class="advantages-control advantages-control--blue">2</i>
+							<i class="advantages-control advantages-control--blue">3</i>
+						</div>
+						<span class="arrow-next arrow-next--blue">
+							<i class="fas fa-angle-right"></i>
+						</span> -->
+					</div>
+
+				</div>
+				<div class="advantage-lessons__teacher">
+					<b class="advantage-lessons__teacher-title">Для педагогов</b>
+					<div class="advantages">
+						<div class="advantages-item">
+							<img src="img/land/adv-tich-1.svg" width="130" height="130" alt="star">
+							<p>Регистрируйтесь и отслеживайте успехи своих учеников в рабочем кабинете</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-tich-2.svg" width="130" height="130" alt="round">
+							<p>Работать с классом легко, когда дети быстрее читают и быстро читают все</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-tich-3.svg" width="130" height="130" alt="flash">
+							<p>Занимайтесь скорочтением всем классом и учитесь с удовольствием</p>
+						</div>
+						
+						<!-- <div class="advantages-controls">
+							<i class="advantages-control advantages-control--pur advantages-control--active-pur">1</i>
+							<i class="advantages-control advantages-control--pur">2</i>
+							<i class="advantages-control advantages-control--pur">3</i>
+						</div>
+						<span class="arrow-next arrow-next--pur">
+							<i class="fas fa-angle-right"></i>
+						</span> -->
+
+					</div>
+
+				</div>
+				<div class="advantage-lessons__parents">
+					<b class="advantage-lessons__parents-title">Для родителей</b>
+					<div class="advantages">
+						<div class="advantages-item">
+							<img src="img/land/adv-par-1.svg" width="130" height="130" alt="star">
+							<p>С нами ваш ребенок будет делать домашние задания намного эффективней</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-par-2.svg" width="130" height="130" alt="round">
+							<p>Мы учим детей самостоятельно работать с текстом и информацией</p>
+						</div>
+						<div class="advantages-item">
+							<img src="img/land/adv-par-3.svg" width="130" height="130" alt="flash">
+							<p>Работая с нами вы получаете диплом акции "Читающая страна"</p>
+						</div>
+						
+						<!-- <div class="advantages-controls">
+							<i class="advantages-control advantages-control--pur advantages-control--active-pur">1</i>
+							<i class="advantages-control advantages-control--pur">2</i>
+							<i class="advantages-control advantages-control--pur">3</i>
+						</div>
+						<span class="arrow-next arrow-next--pur">
+							<i class="fas fa-angle-right"></i>
+						</span> -->
+
+					</div>
+
+				</div>
+				<!-- <a href="#" class="advantage-lessons__link">Начать заниматься!</a> -->
+
+			</div>
+			<div class="advantage-lessons__promo">
+				<div class="layout-position">
+					<div class="advantage-lessons__promo-wrap">
+						<img src="img/land/promo-rocket.svg" width="265" height="285" alt="Rocket">
+						<p class="advantage-lessons__promo-content">Пройди<br> первые 5 уроков <span>совершенно бесплатно</span></p>
+						<a href="https://sergeyzet.github.io/tests/test_code/test-timer.html" class="advantage-lessons__promo-link">Пройти</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="our-program">
+			<div class="layout-position">
+				<h2 class="our-program__title">Наша программа включает в себя <span>5 типов заданий</span></h2>
+				<div class="our-program__items clearfix">
+					<div class="our-program__item">
+						<img src="img/land/art.svg" alt="артикуляция">
+						<h3 class="our-program__item-title">артикуляция</h3>
+					</div>
+					<div class="our-program__item">
+						<img src="img/land/attention.svg" alt="внимание">
+						<h3 class="our-program__item-title">внимание</h3>
+					</div>
+					<div class="our-program__item">
+						<img src="img/land/speed-r.svg" alt="скорость чтения">
+						<h3 class="our-program__item-title">скорость чтения</h3>
+					</div>
+					<div class="our-program__item">
+						<img src="img/land/speed-thinking.svg" alt="скорость мышления">
+						<h3 class="our-program__item-title our-program__item-title--pur">скорость мышления</h3>
+					</div>
+					<div class="our-program__item">
+						<img src="img/land/mem.svg" alt="память">
+						<h3 class="our-program__item-title our-program__item-title--pur">память</h3>
+					</div>
+				</div>
+				<a href="https://sergeyzet.github.io/tests/test_code/test-timer.html" class="our-program__link">начать заниматься</a>
+			</div>
+		</div>
+
+		
+
+		<div class="effect-lessons">
+			<h2 class="effect-lessons__title">Эффект от наших занятий</h2>
+			<div class="layout-position">
+				<div class="effect-lessons__items clearfix">
+					<div class="effect-lessons__item">
+						<div class="effect-lessons__item-wrap effect-lessons__item-wrap--read">
+							<p class="effect-lessons__item-content effect-lessons__item-content--read">развитие <br> памяти и внимания</p>
+						</div>
+					</div>
+					<div class="effect-lessons__item">
+						<div class="effect-lessons__item-wrap effect-lessons__item-wrap--atten">
+							<p class="effect-lessons__item-content effect-lessons__item-content--atten">увеличение <br> скорости чтения</p>
+						</div>
+					</div>
+					<div class="effect-lessons__item">
+						<div class="effect-lessons__item-wrap effect-lessons__item-wrap--mem">
+							<p class="effect-lessons__item-content effect-lessons__item-content--mem">к быстроте и качеству работы с информацией</p>
+						</div>
+					</div>
+					<div class="effect-lessons__item">
+						<div class="effect-lessons__item-wrap effect-lessons__item-wrap--art">
+							<p class="effect-lessons__item-content effect-lessons__item-content--art">к улучшению <br> артикуляции</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <a href="#" class="effect-lessons__link btn">Начать заниматься!</a> -->
+		</div>
+
+		<div class="feedback">
+			<div class="layout-position">
+				<h2 class="feedback-title">Остались вопросы?</h2>
+				<p class="feedback-text">Задайте нам все необходимые вопросы и мы тут же вам ответим!</p>
+
+				<form class="feedback-write-to" action="#" method="post">
+					<div class="feedback-write-to__user feedback-write-to__user--name">
+						<input type="text" name="name" id="name" placeholder="Ваше имя">
+					</div>
+					<div class="feedback-write-to__user feedback-write-to__user--phone">
+						<input type="tel" name="phone" id="phone" placeholder="Телефон">
+					</div>
+					<div class="feedback-write-to__user feedback-write-to__user--email">
+						<input type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
+					</div>
+					<textarea name="coment" id="coment" cols="1" rows="10" placeholder="Задайте здесь ваш вопрос"></textarea>
+					<button class="feedback-write-to__sub btn" type="submit" id="button-email">Отправить</button>
+				</form>
+			</div>
+
+		</div>
+	</main>
+	<footer class="index-footer clearfix">
+		<div class="layout-position clearfix">
+			<div class="index-footer__logo">
+				<img src="img/land/Logo-White.png" alt="Readium" width="300" height="59">
+			</div>
+
+			<div class="index-footer__social">
+				<a href="https://vk.com/readium" class="index-footer__social-link index-footer__social-link--vk" target="_blank">
+					<i class="fab fa-vk"></i>
+					Вконтакте
+				</a>
+				<a href="https://www.instagram.com/readium_pro" class="index-footer__social-link index-footer__social-link--inst" target="_blank">
+					<i class="fab fa-instagram"></i>
+				Вконтакте</a>
+				<a href="https://www.youtube.com/channel/UCrdxviKGUjclJFq8LaoS1WQ?view_as=subscriber" class="index-footer__social-link index-footer__social-link--youtube" target="_blank">
+					<i class="fab fa-youtube"></i>
+					Вконтакте
+				</a>
+			</div>
+			
+			<!-- <div class="index-footer__disign">
+				<b>Дизайн:</b>
+				<img src="img/logo-4.png" width="170"	height="35" alt="Artkost">
+			</div> -->
+			<div class="index-footer__copyright">
+				<p>Любое копирование материалов разрешено только с согласия автора. Все права защищены 2018 © Readium.pro</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+	<div class="modal-form" id="registration-form">
+		<div class="modal-form__header">
+			<p class="modal-form__header-title">Заполните форму</p>
+			<img src="img/land/rocet-form.png" alt="roket">
+		</div>
+		<form id="fr" action="https://echo.htmlacademy.ru" method="post">
+			<div class="user-status">
+				<p>Кто вы?</p>
+				<input id="student" name=status type="radio" value="student" checked>
+				<input id="teacher" name=status type="radio" value="teacher">
+				<input id="parent" name=status type="radio" value="parent">
+				<label for="student">Ученик</label>
+				<label for="teacher">Учитель</label>
+				<label for="parent">Родитель</label>
+			</div>
+			<label for="user-name1">Как вас зовут?</label>
+			<input id="user-name1" type="name" name="user-name" placeholder="Ваше имя">
+			<label for="e-mail1">Введите адрес электронной почты</label>
+			<input id="e-mail1" type="text" name="email" placeholder="Ваш E-mail">
+			<label for="password1">Придумайте пароль</label>
+			<input id="password1" type="password" name="password" placeholder="Пароль">
+			<label for="password2">Повторите пароль</label>
+			<input id="password2" type="password" placeholder="Пароль">
+			<div class="offer">
+				<input type="checkbox" name="notice" id="notice" checked>
+				<label for="notice">
+					<span class="checkbox-indicator"></span>
+					Узнавать по электронной почте
+				</label>
+				<input type="checkbox" name="license-contract" id="license-contract">
+				<label for="license-contract">
+					<span class="checkbox-indicator"></span>
+					Регистрируясь, вы принимаете условия <a href="#">лицензионного договора</a>
+				</label>
+				
+			</div>
+			<button id="button-register" class="push-form" type="submit">Зарегистрироваться</button>
+		</form>
+		<a class="go-login-form" href="#">Уменя есть аккаунт</a>
+		<a class="active-promo-code" href="#">У меня есть код приглашения</a>
+		<div class="social-login">
+			<p class="social-login__text">Или войдите с помощью социальных сетей</p>
+			<a href="#" class="social-login__btn social-login__btn--vk">Вконтакте</a>
+			<a href="#" class="social-login__btn social-login__btn--fb">Фейсбук</a>
+			<a href="#" class="social-login__btn social-login__btn--go">Гугл+</a>
+			<a href="#" class="social-login__btn social-login__btn--ok">Однокласники</a>
+		</div>
+		<div class="modal-close" id="close-register"></div>
+	</div>
+
+	<div class="modal-form modal-form-login" id="login-form">
+		<div class="modal-form__header">
+			<p class="modal-form__header-title">Введите логин и пароль</p>
+			<img src="img/land/rocet-form.png" alt="roket">
+		</div>
+		<form action="#" method="post">
+			<!-- <label for="e-mail">Введите адрес электронной почты или телефон</label> -->
+			<input id="e-mail-login" type="email" placeholder=" E-mail или телефон">
+			<!-- <label for="password">Введите пароль</label> -->
+			<input id="password-login" type="text" placeholder="Пароль">
+			<div class="save-date clearfix">
+				<input type="checkbox" name="save-me" id="save-me" checked>
+				<label for="save-me">
+					<span class="checkbox-indicator"></span>
+					Запомнить меня
+				</label>
+				<a href="#" class="remind-pass">Забыли пароль?</a>
+			</div>
+			<button class="push-form" type="submit" id="login">Войти</button>
+		</form>
+		<div class="social-login">
+			<p class="social-login__text-top">Вы здесь впервые?<br><a href="#">зарегистрируйтесь</a><br>
+				и начните заниматься своим мозгом прямо сейчас
+			</p>
+			<p class="social-login__text">Или войдите с помощью социальных сетей</p>
+			<a href="#" class="social-login__btn social-login__btn--vk">Вконтакте</a>
+			<a href="#" class="social-login__btn social-login__btn--fb">Фейсбук</a>
+			<a href="#" class="social-login__btn social-login__btn--go">Гугл+</a>
+			<a href="#" class="social-login__btn social-login__btn--ok">Однокласники</a>
+		</div>
+		<div class="modal-close" id="close-login"></div>
+	</div>
+
+	<div class="overlay" id="overlay"></div>
+	<script src="js/upload.js"></script>
+	<script src="js/landing.js"></script>
+
+</body>
+</html>

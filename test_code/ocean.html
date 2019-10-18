@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>ocean</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>body { overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/test-style.css">
+	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
+</head>
+
+<body>
+	
+	<header class="test-header clearfix">
+		<div class="layout-position">
+	
+			<div class="test-header-wraper">
+				<div class="logo">
+					<a href="index.html" class="logo-link"><img src="../img/land/Logo-White.png" width="300" height="59" alt="Readium"></a>
+				</div>
+				<div class="subscription hidden">
+					<a class="subscription__link btn" href="#">Оформить подписку</a>
+					<div class="reward hidden">
+						<ul>
+							<li class="reward-item reward-item__star">100</li>
+							<li class="reward-item reward-item__energy">100</li>
+							<li class="reward-item reward-item__coin">100</li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="user-block">
+					<div class="user-block__notification">
+						<i class="far fa-bell"></i>
+					</div>
+					<div class="user-block__avatar">
+						<img src="../img/test/avatar1.jpg" alt="ваш аватар">
+					</div>
+					<div class="user-block__profile">
+						<span class="user-block__profile-name">Казимир</span>
+						<span class="user-block__profile-access">Базовый доступ</span>
+					</div>
+					<div class="arr-down">
+						<i class="fas fa-angle-down"></i>
+					</div>
+	
+				</div>
+				<div class="user-menu hidden">
+					<ul>
+						<li class="user-menu__item"><a href="#">Профиль</a></li>
+						<li class="user-menu__item"><a href="#">Оформить подписку</a></li>
+						<li class="user-menu__item hidden"><a href="#">Статистика</a></li>
+						<li class="user-menu__item hidden"><a href="#">Награды</a></li>
+						<li class="user-menu__item hidden"><a href="#">Упражнения</a></li>
+					</ul>
+					<div class="reward reward--small">
+						<ul>
+							<li class="reward-item reward-item--small reward-item__star reward-item__star--small">100</li>
+							<li class="reward-item reward-item--small reward-item__energy reward-item__energy--small">100</li>
+							<li class="reward-item reward-item--small reward-item__coin reward-item__coin--small">100</li>
+						</ul>
+						<div class="exit">
+							<button class="exit-profile">Выход</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+
+	<main>
+		<div class="test layout-position">
+			<div class="test-wraper test-wraper-start">
+				<div class="first-screen clearfix">
+					<img src="../img/test/test2-boy.jpg" width="268" height="490" alt="IMG">
+					<p class="first-screen__text first-screen__text-top">Отлично!<br><span> А теперь давай проверим<br> насколько ты внимателен!</span></p>
+					<p class="first-screen__text first-screen__text-bot">Расставь буквы так, что бы получилось слово и нажми кнопку<span class="test-content__text--pur"> «Далее»</span>.</p>
+					<button id="start-btn" class="test-read btn">Старт</button>
+				</div>
+			</div>
+			<div id="test-content" class=" test-wraper test-ocean clearfix hidden"><!-- test-wraper -->
+				<div class="test-content clearfix">
+					<div class="wrap clearfix">
+						<div class="test-block__lesson test-block__no-shadow">
+							<div class="dropdown-block" id="dropdown-block">
+								<p class="dropdown-block__title">Отгадай слово:</p>
+								<div class="drop-zona" id="drop-zona">
+								</div>
+								<div class="next-task-text hidden">
+									<h3>Молодец!</h3>
+									<p>А сможешь ещё раз?</p>
+								</div>
+							</div>
+							<div class="drop-blocks" id="words">
+							</div>
+						</div>
+						<aside class="test-block__timers">
+							<div class="test-block__timers-title">
+								твоё время
+							</div>
+							<div id="timer1" class="test-timer test-timer1">0 : 00</div>
+							<div id="timer2" class="test-timer test-timer2 disabled">0 : 00</div>
+							<div id="timer3" class="test-timer test-timer3 disabled">0 : 00</div>
+							<div id="timer4" class="test-timer test-timer4 disabled">0 : 00</div>
+							<div id="timer5" class="test-timer test-timer5 disabled">0 : 00</div>
+						</aside>
+					</div>
+					<div class="test-btn-block clearfix">
+						<button class="test-read test-read--left test-read3 btn" id="btn">Далее</button>
+						<button id="modal-hint" class="test-read test-hint test-hint3">Подсказка</button>
+					</div>
+					
+				</div>	
+			</div>
+			<div id="result-scr" class="test-wraper test-wraper-result hidden">
+				<div class="test-content clearfix">
+					<img class="img-result" src="../img/test/boy.png" width="272" height="463" alt="IMG">
+					<div class="result-block">
+						<div class="result-block__title"> 
+							<h3>Отличная работа!</h3>
+							<p>Ты отгадал:</p>	
+						</div>
+						<div class="result-block__text"> 5 слов </div>
+						<div class="result-star">
+							<div class="result-star__item">
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="result-star__item">
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="result-star__item ">
+								<i class="far fa-star"></i>
+							</div>
+							<div class="reward-item__star reward-item__star--big"></div>
+						</div>
+						<div class="result-block__text-bot">
+							<p>Ты получаешь свои первые моннетки! Они вскоре тебе пригодятся!</p>
+						</div>
+					</div>
+					<button id="btn-result" class="test-read test-read--right test-read--result btn">далее</button>
+				</div>
+			</div>
+		</div>
+</main>
+<div class="overlay hidden"></div>
+
+<div class="modal-hint hidden">
+	<div class="modal-hint__header">
+		<h3 class="modal-hint__header-title">Подсказка</h3>
+		<img src="../img/rocet-form.png" alt="roket">
+	</div>
+	<p class="hint-text"></p>
+	<ul class="hint-list">
+		<li class="hint-list__item">1. Прочитай буквы первый раз внимательно,засекая скорость.</li>
+		<li class="hint-list__item">2. Со второго раза буквы будут поворачиваться каждый раз на 90о. Твоя задача читать их правильно.</li>
+		<li class="hint-list__item">3. Когда буквы вернутся в исходное положение, прочитай их с максимальной скоростью.</li>
+	</ul>
+	<button class="hint-btn">Понял</button>
+
+</div>
+<script src="../js/mixArray.js"></script>
+<script src="../js/createDropEl.js"></script>
+<script src="../js/upload.js"></script>
+<script src="../js/ocean2.js"></script>
+
+</body>
+</html>
