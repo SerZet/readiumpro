@@ -1,0 +1,33 @@
+<svg id="д" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1175 4286.756 170 180.244">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db1c1c;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #951010;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-size: 125px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="Эллипс_4" data-name="Эллипс 4" class="cls-1" cx="85" cy="85" r="85" transform="translate(1175 4297)"/>
+    </clipPath>
+  </defs>
+  <g id="Эллипс_4-2" data-name="Эллипс 4">
+    <circle id="Эллипс_4-3" data-name="Эллипс 4" class="cls-1" cx="85" cy="85" r="85" transform="translate(1175 4297)"/>
+    <g id="Clip" class="cls-2">
+      <path id="Фигура_1" data-name="Фигура 1" class="cls-3" d="M1233.249,4488.872l-33.16-37.436L1312,4375.276l-78.753,113.6Zm-40.37-97.937h0l92.48-93.806,37.553,21.043Z"/>
+    </g>
+  </g>
+  <text id="Д-2" data-name="Д" class="cls-4" transform="translate(1263.074 4421.756)"><tspan x="-43.335" y="0">Д</tspan></text>
+</svg>
